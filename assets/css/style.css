@@ -1,0 +1,37 @@
+:root{
+    --head-: #0084fd;
+    --primary-: #b5ddff;
+    --secondary-:#9792e4;
+    --its-free-: #fdc15f;
+    --foot-: #333333;
+}
+
+*{
+    margin: 0;
+}
+
+header{
+    background-color: var(--head-);
+    padding: 1rem;
+
+    & div{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
+
+.demo .col{
+    background-color: var(--primary-);
+}
+
+section.planning{
+    background-color: var(--secondary-);
+}
+
+/* DEBUG SECTION */
+header{
+    height: 40px;
+}
+
+
