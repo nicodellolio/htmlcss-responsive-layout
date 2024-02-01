@@ -1,37 +1,146 @@
-:root{
-    --head-: #0084fd;
+/* ### UTILITIES ### */
+
+:root {
     --primary-: #b5ddff;
-    --secondary-:#9792e4;
+    --secondary-: #0084fd;
+    --thirdary-: #9792e4;
     --its-free-: #fdc15f;
     --foot-: #333333;
 }
 
-*{
-    margin: 0;
+/* MEDIA QUERY WIDTH SECTION */
+.col-12 {
+    width: 100%;
 }
 
-header{
-    background-color: var(--head-);
-    padding: 1rem;
+.col-6 {
+    width: calc((100/12) * 6);
+}
 
-    & div{
+-col-4 {
+    width: calc((100/12) * 4);
+}
+
+
+/* ### MAIN STYLE SHEET ### */
+
+* {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    max-width: 768px;
+    background-color: var(--secondary-);
+    padding: 1rem 2.5rem 2rem;
+
+    & div {
         display: flex;
         justify-content: space-between;
+
+        & nav {
+            display: flex;
+            align-content: center;
+        }
+
+        & img{
+            width: 8rem;
+        }
+
+        & i {
+            color: #fff;
+            padding: 0.5rem 1rem;
+            font-size: 3rem;
+        }
+
+    }
+
+}
+
+section.demo {
+    & .row {
+        width: 100%;
+        max-width: 768px;
+
+        & [class^='col-']{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    .card {
+        background-color: var(--primary-);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        margin: 5rem auto 2rem auto;
+        border-radius: 50px;
+
+        & h1{
+            font-size: 2.5rem;
+            color: var(--secondary-);
+            padding: 2.5rem;
+        }
         
+        & .textbox{
+            width: 80%;
+            font-size: 1.5rem;
+            color: grey;
+            font-weight: 700;
+            line-height: 2;
+        }
+
+        & .btn {
+            background-color: var(--secondary-);
+            padding: 1rem 8rem;
+            border-radius: 50px;
+            color: #fff;
+            max-width: fit-content;
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: 4px;
+            margin: 3rem auto;
+        }
+
+        & img {
+            width: 80%;
+            margin-bottom: -5px;
+        }
     }
 }
 
-.demo .col{
+
+.demo .col {
     background-color: var(--primary-);
 }
 
-section.planning{
+section.planning {
     background-color: var(--secondary-);
 }
 
-/* DEBUG SECTION */
-header{
+
+
+
+
+
+
+
+
+
+/* DEBUG SECTION
+.debug header{
     height: 40px;
 }
 
+.debug .row{
+    height: 1000px;
 
+    & .col-12{
+        height: 200px;
+    }
+} */
