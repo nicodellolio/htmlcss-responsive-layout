@@ -396,7 +396,45 @@ section.get-started{
     background-color: var(--thirdary-);
 
     & .card-get-started{
+        padding: 4rem 2rem;
         text-align: center;
+        color: #fff;
+        line-height: 1.5;
+
+        & span{
+            font-size: 1.25rem;
+            color: #f6f6f6a0;
+        }
+
+        & h4{
+            font-size: 200%;
+            margin: 1rem 0 2rem;
+        }
+
+        & h1{
+            font-size: 350%;
+            color: var(--its-free-);
+            margin-bottom: 1.5rem;
+        }
+
+        & .btn{
+            background-color: #fff;
+            font-size: 1.5rem;
+            padding: 1rem 3rem;
+            margin: 2rem;
+            border-radius: 50px;
+
+            & a{
+                text-decoration: none;
+                color: var(--thirdary-);
+                font-weight: 600;
+                letter-spacing: 2px;
+            }
+            
+        }
+
+
+
     }
 }
 
