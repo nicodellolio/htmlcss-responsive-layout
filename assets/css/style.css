@@ -458,7 +458,53 @@ footer{
 
 /* ### END MAIN STYLE SHEET ### */
 
+/* ### MEDIA QUERYS SECTION ### */
 
+@media screen and (min-width: 768px) {
+    
+    .col-12 {
+        width: 100%;
+    }
+    
+    .col-6 {
+        width: calc((100/12) * 6);
+    }
+    
+    -col-4 {
+        width: calc((100/12) * 4);
+    }
+    
+
+    header{
+        max-width: 992px;
+
+        & .head-container{
+            & img{
+                width: 15%;
+            }
+    
+            & .fa-solid{
+                font-size: 3rem;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1200px){
+    .col-12 {
+        width: 100%;
+    }
+    
+    .col-6 {
+        width: calc((100/12) * 6);
+    }
+    
+    -col-4 {
+        width: calc((100/12) * 4);
+    }
+}
 
 
 
@@ -467,14 +513,14 @@ footer{
 
 
 /* DEBUG SECTION */
-/* 
+
 .debug *{
     border: 1px dashed black;
-} */
+}
 
-/* .debug .card-demo.sm{
+.debug .card-demo.sm{
     flex-basis: 700px;
-} */
+}
 
 .debug .card-testimonial{
     height: 800px;
