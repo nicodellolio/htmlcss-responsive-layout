@@ -154,13 +154,32 @@ section.work-with-us{
 
 }
 
-.card-about-us{
-    & h1, article,{
+.about-us .row{
+    margin-bottom: 5rem;
+
+    & h1, article{
         color: var(--thirdary-);
     }
-
+    
     & button{
         border-color: var(--thirdary-);
+    }
+}
+
+section.get-started{
+    background-color: var(--thirdary-);
+
+    & .card-get-started{
+        text-align: center;
+    }
+}
+
+footer{
+    background-color: var(--foot-);
+    color: #fff;
+
+    & .col-12{
+        text-align: center;
     }
 }
 
@@ -187,14 +206,22 @@ section.work-with-us{
 .debug .card-testimonial{
     height: 800px;
 }
-.card-testimonial-head{
+.debug .card-testimonial-head{
     height: 500px;
 }
 
-.card-wwu{
+.debug .card-wwu{
     height: 700px;
 }
 
-.card-about-us.top{
+.debug .card-about-us.top{
     height:2500px;
+}
+
+.debug .card-get-started{
+    height: 900px;
+}
+
+.debug footer{
+    height: 400px;
 }
