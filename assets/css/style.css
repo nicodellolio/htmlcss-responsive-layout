@@ -26,7 +26,7 @@
 
 * {
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pt Sans', sans-serif;
     box-sizing: border-box;
 }
 
@@ -36,6 +36,7 @@ header {
     max-width: 768px;
     background-color: var(--secondary-);
     padding: 1rem 2.5rem 2rem;
+    margin-bottom: 3rem;
 
     & div {
         display: flex;
@@ -72,13 +73,13 @@ section.demo {
         }
     }
     
-    .card {
+    .card-demo {
         background-color: var(--primary-);
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 90%;
-        margin: 5rem auto 2rem auto;
+        margin: 2rem auto 2rem auto;
         border-radius: 50px;
 
         & h1{
@@ -111,36 +112,89 @@ section.demo {
             width: 80%;
             margin-bottom: -5px;
         }
+
+    }
+    
+    & .card-demo.sm{
+        text-align: center;
+        color: var(--secondary-);
     }
 }
 
-
-.demo .col {
-    background-color: var(--primary-);
+section.planning{
+    background-color: var(--thirdary-);
 }
 
-section.planning {
-    background-color: var(--secondary-);
-}
-
-
-
-
-
-
-
-
-
-
-/* DEBUG SECTION
-.debug header{
-    height: 40px;
-}
-
-.debug .row{
-    height: 1000px;
-
-    & .col-12{
-        height: 200px;
+section.testimonials{
+    margin-bottom: 5rem;
+    
+    & .row{
+        margin-bottom: 3rem;
     }
-} */
+
+    & .card-testimonial{
+        background-color: var(--thirdary-);
+    }
+}
+
+section.work-with-us{
+    background-color: var(--thirdary-);
+
+    & [class^= "col-"]{
+        margin-bottom: 2rem;
+        
+        & .card-wwu{
+            background-color: #fff;
+
+            & h1,h4{
+                color: var(--thirdary-);
+            }
+        }
+    }
+
+}
+
+.card-about-us{
+    & h1, article,{
+        color: var(--thirdary-);
+    }
+
+    & button{
+        border-color: var(--thirdary-);
+    }
+}
+
+/* ### END MAIN STYLE SHEET ### */
+
+
+
+
+
+
+
+
+
+/* DEBUG SECTION */
+
+.debug *{
+    border: 1px dashed black;
+}
+
+.debug .card-demo.sm{
+    flex-basis: 700px;
+}
+
+.debug .card-testimonial{
+    height: 800px;
+}
+.card-testimonial-head{
+    height: 500px;
+}
+
+.card-wwu{
+    height: 700px;
+}
+
+.card-about-us.top{
+    height:2500px;
+}
