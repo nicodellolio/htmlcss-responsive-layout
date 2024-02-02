@@ -87,7 +87,7 @@ section.demo {
         border-radius: 27px;
 
         .title-box{
-            width: 88%;
+            width: 85%;
             & h1{
                 font-size: 180%;
                 color: var(--secondary-);
@@ -130,7 +130,7 @@ section.demo {
 }
 
 .textbox{
-    width: 88%;
+    width: 85%;
     font-size: 1.15rem;
     color: grey;
     font-weight: 600;
@@ -140,8 +140,9 @@ section.demo {
 
 section.planning{
     background-color: var(--thirdary-);
-    margin-top: 5rem;
+    margin: 5rem auto 5rem;
     padding: 3rem 2rem;
+
 
     & .card-planning{
         color: #fff;
@@ -184,21 +185,83 @@ section.planning{
             font-size: 1.75rem;
             border-radius: 50%;
         }
-
-
     }
-
 }
 
 section.testimonials{
     margin-bottom: 5rem;
+    text-align: center;
+
+    & [class^='col-']{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    & .card-testimonial-head{
+        width: 85%;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        & span{
+            font-size: 1.25rem;
+        }
+
+        & h1{
+            font-size: 220%;
+            margin-top: 1.25rem;
+            color: var(--thirdary-);
+        }
+
+        & p{
+            margin-top: 1.5rem;
+            font-size: 140%;
+            line-height: 1.5;
+        }
+    }
     
+
     & .row{
         margin-bottom: 3rem;
     }
 
     & .card-testimonial{
         background-color: var(--thirdary-);
+        width: 85%;
+        margin: 1rem;
+        padding: 1.5rem;
+        border-radius: 10%;
+        color: #fff;
+
+        & .img-to-crop {
+            margin: auto;
+            width: 70%;
+            aspect-ratio: 1;
+            overflow: hidden;
+            border-radius: 50%;
+            
+            & img {
+              margin: auto;
+              margin-left: -25%;
+              height: 100%;
+              width: auto;
+            }
+        }
+
+        & article{
+            font-size: 1.25rem;
+            margin: 1rem;
+            line-height: 1.5;
+        }
+
+        & span{
+            font-size: 1.25rem;
+            font-weight:600;
+            letter-spacing: 2px;
+        }
+
+        
+          
     }
 }
 
