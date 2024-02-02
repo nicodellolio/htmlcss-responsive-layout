@@ -267,15 +267,56 @@ section.testimonials{
 
 section.work-with-us{
     background-color: var(--thirdary-);
+    padding: 2rem;
+    margin-bottom: 4rem;
 
     & [class^= "col-"]{
         margin-bottom: 2rem;
+        text-align: center;
+
+        & > h1{
+            color: #fff;
+            font-size: 200%;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+        }
         
         & .card-wwu{
             background-color: #fff;
+            text-align: left;
+            padding: 2rem;
+            border-radius: 5%;
 
             & h1,h4{
                 color: var(--thirdary-);
+            }
+
+            & h1{
+                font-size: 300%;
+                font-weight: 600;
+            }
+
+            & h4{
+                font-size: 150%;
+                padding: 1.15rem 0;
+            }
+
+            & p{
+                color: grey;
+                font-size: 1.25rem;
+                margin-bottom: 2rem;
+            }
+
+            & .more{
+                background-color: var(--thirdary-);
+                max-width: fit-content;
+                padding: 0.5rem 2.5rem;
+                color: #fff;
+                font-size: 1.15rem;
+                font-weight: 600;
+                letter-spacing: 3px;
+                border-radius: 30px;
             }
         }
     }
@@ -285,12 +326,69 @@ section.work-with-us{
 .about-us .row{
     margin-bottom: 5rem;
 
-    & h1, article{
-        color: var(--thirdary-);
-    }
-    
-    & button{
-        border-color: var(--thirdary-);
+    & [class^= "col-"]{
+        
+        .card-about-us.top{
+            padding: 2rem;
+
+            & h1, article{
+                color: var(--thirdary-);
+            }
+        
+            & h1{
+                font-size: 300%;
+            }
+
+            & p{
+                font-size: 1.25rem;
+                margin-top: 2rem;
+                line-height: 1.75;
+            }
+
+        }
+        
+        & .card-about-us{
+            position: relative;
+            padding: 2rem;
+
+            & .img-to-crop {
+                width: 60%;
+                aspect-ratio: 1;
+                overflow: hidden;
+                border-radius: 50%;
+                
+                & img {
+                  margin: auto;
+                  height: 100%;
+                  width: auto;
+                }
+
+            }
+            
+            & .fa-solid{
+                font-size: 4rem;
+                color: var(--thirdary-);
+                position: absolute;
+                top: 1rem;
+                right: 40%
+            }
+
+            & article{
+                font-size: 180%;
+                color: var(--thirdary-);
+                font-weight: 800;
+                margin-top: 2rem;
+            }
+        }
+        
+        & .btn{
+            background-color: var(--thirdary-);
+            max-width: fit-content;
+            color: #fff;
+            margin-top: 1.5rem;
+            padding: 0.5rem 1rem; 
+            border-radius: 50px;
+        }
     }
 }
 
