@@ -434,16 +434,25 @@ section.get-started{
         }
 
 
-
+ 
     }
 }
 
 footer{
     background-color: var(--foot-);
     color: #fff;
+    padding: 2rem;
 
     & .col-12{
         text-align: center;
+
+        & p{
+            margin-bottom: 5rem;
+        }
+
+        & a{
+            color: var(--primary-);
+        }
     }
 }
 
