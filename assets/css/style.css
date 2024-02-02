@@ -14,11 +14,11 @@
 }
 
 .col-6 {
-    width: calc((100/12) * 6);
+    width: calc((100%/12) * 6);
 }
 
--col-4 {
-    width: calc((100/12) * 4);
+.col-4 {
+    width: calc((100%/12) * 4);
 }
 
 
@@ -488,7 +488,6 @@ footer{
             }
         }
     }
-
 }
 
 
